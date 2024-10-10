@@ -3,7 +3,7 @@ from typing import List
 from exo.topology.partitioning_strategy import Partition, map_partitions_to_shards
 from exo.inference.shard import Shard
 
-
+# We dont need to add another test case for Hybrid here since this purely check mapping of partitions to shards.
 class TestRingMemoryWeightedPartitioningStrategy(unittest.TestCase):
   def test_map_partitions_to_shards(self):
     partitions = [
